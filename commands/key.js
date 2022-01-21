@@ -12,7 +12,7 @@ module.exports = {
             let key = message.content.split(' ');
             await axios.get(`https://api.hyper.co/v4/licenses/${key[1]}`,{
                 headers:{
-                    Authorization: `Bearer pk_zddeWq1ccD48dVGi0V1T2skwolW9iaLN`
+                    Authorization: `Bearer `
                 }
             }).then(res=>{
                 sentMsg.edit(
